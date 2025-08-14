@@ -67,7 +67,7 @@ export const App: React.FC = () => {
   };
 
   const handleSortAlphabetical = () => setSortField(SortType.Alphabetical);
-  const handleSortLength = () => () => setSortField(SortType.Length);
+  const handleSortLength = () => setSortField(SortType.Length);
   const handleReverse = () => setIsReversed(prev => !prev);
   const isSorted = sortField !== SortType.All || isReversed;
 
